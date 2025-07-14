@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.section {
+  border: 1px solid black;
+  background-color: #f0f0f0;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 40px 15px 15px 15px;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffcccb;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 1.25em;
+}
+
+/* Background color variations */
+.chicken { background-color: #ffe0b2; }
+.chicken .section-title { background-color: #ff7043; color: white; }
+
+.beef { background-color: #e1bee7; }
+.beef .section-title { background-color: #8e24aa; color: white; }
+
+.sushi { background-color: #c8e6c9; }
+.sushi .section-title { background-color: #388e3c; color: white; }
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 48%;
+    margin: 1%;
+  }
+  .section:nth-child(3) {
+    width: 98%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .section {
+    width: 31.33%;
+    margin: 1%;
+  }
+}
